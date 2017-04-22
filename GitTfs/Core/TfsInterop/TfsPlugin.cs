@@ -22,10 +22,12 @@ namespace Sep.Git.Tfs.Core.TfsInterop
                 return pluginLoader.TryLoadVsPluginVersion(explicitVersion) ??
                        pluginLoader.Fail("Unable to load TFS version specified in GIT_TFS_CLIENT (" + explicitVersion + ")!");
             }
-            return pluginLoader.TryLoadVsPluginVersion("2015", true) ??
+            return pluginLoader.TryLoadVsPluginVersion("2017", true) ??
+                   pluginLoader.TryLoadVsPluginVersion("2015", true) ??
                    pluginLoader.TryLoadVsPluginVersion("2013") ??
                    pluginLoader.TryLoadVsPluginVersion("2012") ??
                    pluginLoader.TryLoadVsPluginVersion("2010") ??
+                   pluginLoader.TryLoadVsPluginVersion("2017") ??
                    pluginLoader.TryLoadVsPluginVersion("2015") ??
                    pluginLoader.Fail();
         }
@@ -36,6 +38,7 @@ namespace Sep.Git.Tfs.Core.TfsInterop
             private static string VsPluginAssemblyFolder { get; set; }
             private static readonly Dictionary<string, string> VisualStudioVersions = new Dictionary<string, string>()
             {
+                {"2017", "15.0" },
                 {"2015", "14.0" },
                 {"2013", "12.0" },
                 {"2012", "11.0" },

@@ -116,7 +116,20 @@
     </When>
   </Choose>
   <Choose>
-    <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And $(TargetFrameworkVersion) == 'v4.5.2'" />
+    <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And $(TargetFrameworkVersion) == 'v4.5.2'">
+      <ItemGroup>
+        <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory">
+          <HintPath>..\packages\vs2017\Microsoft.IdentityModel.Clients.ActiveDirectory\lib\net45\Microsoft.IdentityModel.Clients.ActiveDirectory.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory.Platform">
+          <HintPath>..\packages\vs2017\Microsoft.IdentityModel.Clients.ActiveDirectory\lib\net45\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+      </ItemGroup>
+    </When>
   </Choose>
   <Choose>
     <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And $(TargetFrameworkVersion) == 'v4.5.2'">
@@ -141,10 +154,71 @@
     </When>
   </Choose>
   <Choose>
-    <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And $(TargetFrameworkVersion) == 'v4.5.2'" />
+    <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And $(TargetFrameworkVersion) == 'v4.5.2'">
+      <ItemGroup>
+        <Reference Include="Microsoft.TeamFoundation.DistributedTask.Common.Contracts">
+          <HintPath>..\packages\vs2017\Microsoft.TeamFoundation.DistributedTask.Common\lib\net45\Microsoft.TeamFoundation.DistributedTask.Common.Contracts.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+      </ItemGroup>
+    </When>
   </Choose>
   <Choose>
-    <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And $(TargetFrameworkVersion) == 'v4.5.2'" />
+    <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And $(TargetFrameworkVersion) == 'v4.5.2'">
+      <ItemGroup>
+        <Reference Include="Microsoft.TeamFoundation.Build2.WebApi">
+          <HintPath>..\packages\vs2017\Microsoft.TeamFoundationServer.Client\lib\net45\Microsoft.TeamFoundation.Build2.WebApi.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="Microsoft.TeamFoundation.Chat.WebApi">
+          <HintPath>..\packages\vs2017\Microsoft.TeamFoundationServer.Client\lib\net45\Microsoft.TeamFoundation.Chat.WebApi.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="Microsoft.TeamFoundation.Core.WebApi">
+          <HintPath>..\packages\vs2017\Microsoft.TeamFoundationServer.Client\lib\net45\Microsoft.TeamFoundation.Core.WebApi.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="Microsoft.TeamFoundation.Dashboards.WebApi">
+          <HintPath>..\packages\vs2017\Microsoft.TeamFoundationServer.Client\lib\net45\Microsoft.TeamFoundation.Dashboards.WebApi.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="Microsoft.TeamFoundation.Policy.WebApi">
+          <HintPath>..\packages\vs2017\Microsoft.TeamFoundationServer.Client\lib\net45\Microsoft.TeamFoundation.Policy.WebApi.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="Microsoft.TeamFoundation.SourceControl.WebApi">
+          <HintPath>..\packages\vs2017\Microsoft.TeamFoundationServer.Client\lib\net45\Microsoft.TeamFoundation.SourceControl.WebApi.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="Microsoft.TeamFoundation.Test.WebApi">
+          <HintPath>..\packages\vs2017\Microsoft.TeamFoundationServer.Client\lib\net45\Microsoft.TeamFoundation.Test.WebApi.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="Microsoft.TeamFoundation.TestManagement.WebApi">
+          <HintPath>..\packages\vs2017\Microsoft.TeamFoundationServer.Client\lib\net45\Microsoft.TeamFoundation.TestManagement.WebApi.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="Microsoft.TeamFoundation.Work.WebApi">
+          <HintPath>..\packages\vs2017\Microsoft.TeamFoundationServer.Client\lib\net45\Microsoft.TeamFoundation.Work.WebApi.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="Microsoft.TeamFoundation.WorkItemTracking.WebApi">
+          <HintPath>..\packages\vs2017\Microsoft.TeamFoundationServer.Client\lib\net45\Microsoft.TeamFoundation.WorkItemTracking.WebApi.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+      </ItemGroup>
+    </When>
   </Choose>
   <Choose>
     <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And $(TargetFrameworkVersion) == 'v4.5.2'">
@@ -164,6 +238,71 @@
           <Private>True</Private>
           <Paket>True</Paket>
         </Reference>
+        <Reference Include="Microsoft.TeamFoundation.DeleteTeamProject">
+          <HintPath>..\packages\vs2017\Microsoft.TeamFoundationServer.ExtendedClient\lib\net45\Microsoft.TeamFoundation.DeleteTeamProject.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="Microsoft.TeamFoundation.Diff">
+          <HintPath>..\packages\vs2017\Microsoft.TeamFoundationServer.ExtendedClient\lib\net45\Microsoft.TeamFoundation.Diff.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="Microsoft.TeamFoundation.Discussion.Client">
+          <HintPath>..\packages\vs2017\Microsoft.TeamFoundationServer.ExtendedClient\lib\net45\Microsoft.TeamFoundation.Discussion.Client.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="Microsoft.TeamFoundation.Git.Client">
+          <HintPath>..\packages\vs2017\Microsoft.TeamFoundationServer.ExtendedClient\lib\net45\Microsoft.TeamFoundation.Git.Client.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="Microsoft.TeamFoundation.Lab.Client">
+          <HintPath>..\packages\vs2017\Microsoft.TeamFoundationServer.ExtendedClient\lib\net45\Microsoft.TeamFoundation.Lab.Client.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="Microsoft.TeamFoundation.Lab.Common">
+          <HintPath>..\packages\vs2017\Microsoft.TeamFoundationServer.ExtendedClient\lib\net45\Microsoft.TeamFoundation.Lab.Common.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="Microsoft.TeamFoundation.Lab.TestIntegration.Client">
+          <HintPath>..\packages\vs2017\Microsoft.TeamFoundationServer.ExtendedClient\lib\net45\Microsoft.TeamFoundation.Lab.TestIntegration.Client.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="Microsoft.TeamFoundation.Lab.WorkflowIntegration.Client">
+          <HintPath>..\packages\vs2017\Microsoft.TeamFoundationServer.ExtendedClient\lib\net45\Microsoft.TeamFoundation.Lab.WorkflowIntegration.Client.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="Microsoft.TeamFoundation.ProjectManagement">
+          <HintPath>..\packages\vs2017\Microsoft.TeamFoundationServer.ExtendedClient\lib\net45\Microsoft.TeamFoundation.ProjectManagement.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="Microsoft.TeamFoundation.SharePointReporting.Integration">
+          <HintPath>..\packages\vs2017\Microsoft.TeamFoundationServer.ExtendedClient\lib\net45\Microsoft.TeamFoundation.SharePointReporting.Integration.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="Microsoft.TeamFoundation.TestImpact.Client">
+          <HintPath>..\packages\vs2017\Microsoft.TeamFoundationServer.ExtendedClient\lib\net45\Microsoft.TeamFoundation.TestImpact.Client.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="Microsoft.TeamFoundation.TestManagement.Client">
+          <HintPath>..\packages\vs2017\Microsoft.TeamFoundationServer.ExtendedClient\lib\net45\Microsoft.TeamFoundation.TestManagement.Client.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="Microsoft.TeamFoundation.TestManagement.Common">
+          <HintPath>..\packages\vs2017\Microsoft.TeamFoundationServer.ExtendedClient\lib\net45\Microsoft.TeamFoundation.TestManagement.Common.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
         <Reference Include="Microsoft.TeamFoundation.VersionControl.Client">
           <HintPath>..\packages\vs2017\Microsoft.TeamFoundationServer.ExtendedClient\lib\net45\Microsoft.TeamFoundation.VersionControl.Client.dll</HintPath>
           <Private>True</Private>
@@ -174,8 +313,33 @@
           <Private>True</Private>
           <Paket>True</Paket>
         </Reference>
+        <Reference Include="Microsoft.TeamFoundation.VersionControl.Common.Integration">
+          <HintPath>..\packages\vs2017\Microsoft.TeamFoundationServer.ExtendedClient\lib\net45\Microsoft.TeamFoundation.VersionControl.Common.Integration.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
         <Reference Include="Microsoft.TeamFoundation.WorkItemTracking.Client">
           <HintPath>..\packages\vs2017\Microsoft.TeamFoundationServer.ExtendedClient\lib\net45\Microsoft.TeamFoundation.WorkItemTracking.Client.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="Microsoft.TeamFoundation.WorkItemTracking.Client.DataStoreLoader">
+          <HintPath>..\packages\vs2017\Microsoft.TeamFoundationServer.ExtendedClient\lib\net45\Microsoft.TeamFoundation.WorkItemTracking.Client.DataStoreLoader.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="Microsoft.TeamFoundation.WorkItemTracking.Client.QueryLanguage">
+          <HintPath>..\packages\vs2017\Microsoft.TeamFoundationServer.ExtendedClient\lib\net45\Microsoft.TeamFoundation.WorkItemTracking.Client.QueryLanguage.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="Microsoft.TeamFoundation.WorkItemTracking.Common">
+          <HintPath>..\packages\vs2017\Microsoft.TeamFoundationServer.ExtendedClient\lib\net45\Microsoft.TeamFoundation.WorkItemTracking.Common.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="Microsoft.TeamFoundation.WorkItemTracking.Proxy">
+          <HintPath>..\packages\vs2017\Microsoft.TeamFoundationServer.ExtendedClient\lib\net45\Microsoft.TeamFoundation.WorkItemTracking.Proxy.dll</HintPath>
           <Private>True</Private>
           <Paket>True</Paket>
         </Reference>

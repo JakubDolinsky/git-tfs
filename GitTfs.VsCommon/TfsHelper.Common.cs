@@ -1315,7 +1315,7 @@ namespace Sep.Git.Tfs.VsCommon
         private Assembly LoadFromVsFolder(object sender, ResolveEventArgs args)
         {
             Trace.WriteLine("Looking for assembly " + args.Name + " ...");
-            string folderPath = Path.Combine(GetVsInstallDir(), "PrivateAssemblies");
+            string folderPath = Path.Combine(GetVsInstallDir(), @"\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\fr");
             string assemblyPath = Path.Combine(folderPath, new AssemblyName(args.Name).Name + ".dll");
             if (File.Exists(assemblyPath) == false)
                 return null;

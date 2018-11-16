@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net462</TargetFramework>
+    <TargetFramework>net471</TargetFramework>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -37,9 +37,9 @@
     <None Include="app.config" />
     <None Include="paket.references" />
   </ItemGroup>
-      <ItemGroup>
+  <ItemGroup>
     <Reference Include="System.Windows.Forms" />
-      </ItemGroup>
+  </ItemGroup>
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
     <Exec Command="xcopy /y /I &quot;$(TargetDir)*.dll&quot; &quot;$(SolutionDir)GitTfs\$(OutDir)$(ProjectName)&quot; /EXCLUDE:$(SolutionDir)build\files_to_ignore_during_post_build_copy.txt" />
   </Target>

@@ -29,8 +29,8 @@ nuget Microsoft.TeamFoundationServer.ExtendedClient ~> 14.0
 group dotnetcore
     framework: netcoreapp2.0
     source https://api.nuget.org/v3/index.json
-nuget Microsoft.TeamFoundationServer.Client ~> 16.143.0-preview
-nuget Microsoft.TeamFoundationServer.ExtendedClient ~> 16.143.0-preview
+nuget Microsoft.TeamFoundationServer.Client ~> 16.144.1-preview
+nuget Microsoft.TeamFoundationServer.ExtendedClient ~> 16.144.1-preview
 
 group Build
     framework: 4.5
